@@ -101,7 +101,6 @@ def experience_education():
     st.subheader("Education & Learning")
     st.write(
         """
-        - B.S. in Information Technology, Tech University (2014–2018)  
         - Generative AI, LangChain Agents, RLHF, Multi-Cloud MLOps, Zero Trust Security  
         - Ongoing: Federated Learning, XAI, Serverless Deployments, Vector Databases, Data Lakehouses
         """
@@ -153,3 +152,4 @@ st.markdown("---")
 st.markdown(
     "Made with 🔥 by Amit Chougule | SoulFuel Remix Sprint | 100% Python-powered")
 st.markdown("📧 amitchouguleack@gmail.com")
+st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/amit-chougule-software-developer/) | [🔗 GitHub](https://github.com/amitchouguleack)")
