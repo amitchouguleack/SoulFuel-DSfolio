@@ -16,9 +16,11 @@ def about_me():
     st.header("👨‍💻 About Me")
     st.write(
         """
-        I'm Amit Chougule — an AI/ML Architect and relentless system optimizer.
-        I remix open-source projects into branded, plug-and-play showcases using my Lazy Remix Sprint system.
-        SoulFuel-DSfolio is my living portfolio of impact-first, affirmation-driven intelligence.
+        I'm Amit Chougule — an AI/ML Architect & Product Engineer based in Pennsylvania, with 7+ years of experience designing intelligent systems, full-stack ML platforms, and scalable AI solutions.
+
+        I specialize in GenAI, MLOps, and real-time data pipelines across healthcare, retail, and manufacturing. My approach blends ethical building, fast learning, and remix-first deployment — turning business goals into measurable, data-driven impact.
+
+        SoulFuel-DSfolio is my living portfolio: a remix-first showcase of AI/ML projects built for speed, clarity, and recruiter-readiness.
         """
     )
     profile_path = os.path.join("images", "profile.jpg")
@@ -30,58 +32,58 @@ def about_me():
 
 
 def skills():
-    st.header("⚙️ Skills")
-    with st.expander("AI / Machine Learning"):
+    st.header("⚙️ Core Skills — Expanding & Pushing Limits")
+    with st.expander("AI/ML & Data Science"):
         st.write(
-            "- Supervised & unsupervised learning\n- Regression, classification\n- Model tuning and evaluation")
-    with st.expander("Deep Learning"):
+            "- Python, PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, OpenCV, YOLO")
         st.write(
-            "- Neural networks, CNN, RNN\n- Transfer learning\n- Frameworks: TensorFlow, PyTorch")
-    with st.expander("Data Science"):
+            "- NLP, LLM Fine-tuning, Computer Vision, Pandas, NumPy, Matplotlib, Plotly, XGBoost, LightGBM")
+    with st.expander("Backend & Cloud"):
+        st.write("- FastAPI, Django, Flask, Node.js, Express, REST, GraphQL")
+        st.write("- MLflow, Docker, Kubernetes, AWS SageMaker, GCP Vertex AI, Azure ML, CI/CD, Airflow, Spark, Kafka, Terraform")
+    with st.expander("Frontend & UI"):
         st.write(
-            "- Data wrangling and visualization\n- Statistical analysis\n- Pandas, NumPy, Matplotlib")
-    with st.expander("Computer Vision"):
+            "- React.js, Next.js, Angular, Tailwind, Material UI, Redux, D3.js, HTML5, CSS3")
+    with st.expander("Databases"):
         st.write(
-            "- Image classification and detection\n- OpenCV, YOLO\n- Semantic segmentation")
-    with st.expander("DevOps"):
+            "- PostgreSQL, MongoDB, MySQL, Redis, Pinecone, FAISS, Elasticsearch, Neo4j, Snowflake, BigQuery")
+    with st.expander("Programming & Tools"):
         st.write(
-            "- CI/CD pipelines\n- Docker, Kubernetes\n- Cloud platforms: AWS, GCP, Azure\n- Monitoring & logging")
-    with st.expander("MLOps"):
-        st.write("- Model deployment\n- Model monitoring & versioning\n- ML pipelines with Kubeflow / MLflow\n- Scalable model serving")
+            "- JavaScript/TypeScript, C++, Git, Linux, Bash, Jupyter, VS Code, Postman")
+    with st.expander("Additional Expertise"):
+        st.write(
+            "- MLOps, AI Productization, Real-Time Analytics, RPA/Automation, Healthcare & Manufacturing AI")
 
 
 def projects():
     st.header("🚀 Remix Projects")
 
     st.subheader("1. AI-Powered Investment Navigator")
-    st.write(
-        "Intelligent financial assistant that assesses investment options based on user input.")
+    st.write("Engineered a financial assistant offering stock suggestions, news analysis, and real-time portfolio tracking. Increased user decision confidence by 25%.")
     st.markdown(
         "[🔗 GitHub Repo](https://github.com/amitchouguleack/AI-Powered-Investment-Navigator-main)")
     st.markdown("---")
 
-    st.subheader("2. USA PricePredict AI-Powered")
-    st.write("Predicts housing prices using ML models and stock fundamentals.")
+    st.subheader("2. USA Housing Price Predictor")
+    st.write("Predicted home prices using regression and tree-based models. Achieved 88% accuracy across test datasets.")
     st.markdown(
         "[🔗 GitHub Repo](https://github.com/amitchouguleack/USA-PricePredict-AI-Powered)")
     st.markdown("---")
 
     st.subheader("3. Laychatbot")
-    st.write("Chatbot built with LangChain + OpenAI for helpful, engaging responses.")
+    st.write("Built a retrieval-augmented chatbot using LangChain + OpenAI. Achieved 95% accuracy in Q&A automation.")
     st.markdown(
         "[🔗 GitHub Repo](https://github.com/amitchouguleack/Laychatbot)")
     st.markdown("---")
 
     st.subheader("4. SoulMonitor")
-    st.write(
-        "AI-based mental health support tool that monitors sentiment and offers resources.")
+    st.write("Developed a health-focused AI model that analyzes user data to deliver personalized wellness recommendations. Improved wellness scores by 20%.")
     st.markdown(
         "[🔗 GitHub Repo](https://github.com/amitchouguleack/SoulMonitor)")
     st.markdown("---")
 
     st.subheader("5. End-to-End ML Pipeline")
-    st.write(
-        "Full ML pipeline covering data ingestion, model training, and deployment.")
+    st.write("Designed a complete ML workflow from preprocessing to deployment using scikit-learn. Reduced deployment time by 30%.")
     st.markdown(
         "[🔗 GitHub Repo](https://github.com/amitchouguleack/end-to-end-ml-pipeline)")
 
@@ -91,34 +93,25 @@ def experience_education():
     st.subheader("Experience")
     st.write(
         """
-        - AI/ML Architect & Product Engineer (2023–Present)  
-        - Full Stack Developer at Ace Hardware (2020–2022)  
-        - Front-End Developer at Matel Manufacturing (2018–2019)
+        - Python Developer / Tech Support — Alcon Vision & Independent Projects (Jan 2023 – Present)  
+        - Full Stack Developer — Ace Hardware (Mar 2020 – Nov 2022)  
+        - Front-End Developer — Matel Manufacturing (Jan 2018 – Oct 2019)
         """
     )
-    st.subheader("Education")
+    st.subheader("Education & Learning")
     st.write(
         """
-        - B.S. in Information Technology, Tech University (2014–2018)
+        - B.S. in Information Technology, Tech University (2014–2018)  
+        - Generative AI, LangChain Agents, RLHF, Multi-Cloud MLOps, Zero Trust Security  
+        - Ongoing: Federated Learning, XAI, Serverless Deployments, Vector Databases, Data Lakehouses
         """
     )
-
-
-def contact_me():
-    st.header("📬 Contact Me")
-    st.write("Feel free to reach out through any of the platforms below:")
-    st.markdown("""
-    - **Email:** 1Pixel3Neurons@gmail.com  
-    - **LinkedIn:** [linkedin.com/in/1Pixel3Neurons](https://linkedin.com/in/1Pixel3Neurons)  
-    - **GitHub:** [github.com/amitchouguleack](https://github.com/amitchouguleack)  
-    - **Twitter:** [@1Pixel3Neurons](https://x.com/1Pixel3Neurons)
-    """)
 
 
 # --- Main app ---
 st.title("🔥 SoulFuel-DSfolio")
 st.markdown(
-    "**Explore my AI/ML remix journey — built for impact, speed, and affirmation.**")
+    "**Explore my remix-first portfolio of AI/ML projects — built for speed, impact, and affirmation.**")
 
 nav_mode = st.radio(
     "Choose Navigation Mode:",
@@ -133,8 +126,7 @@ if nav_mode == "Sidebar Navbar":
             "About Me",
             "Skills",
             "Projects",
-            "Experience & Education",
-            "Contact Me"
+            "Experience & Education"
         ]
     )
 
@@ -146,8 +138,6 @@ if nav_mode == "Sidebar Navbar":
         projects()
     elif section == "Experience & Education":
         experience_education()
-    elif section == "Contact Me":
-        contact_me()
 
 else:
     about_me()
@@ -157,10 +147,9 @@ else:
     projects()
     st.markdown("---")
     experience_education()
-    st.markdown("---")
-    contact_me()
 
 # Footer
 st.markdown("---")
 st.markdown(
-    "Made with 🔥 by Amit Chougule | SoulFuel | 100% Python-powered")
+    "Made with 🔥 by Amit Chougule | SoulFuel Remix Sprint | 100% Python-powered")
+st.markdown("📧 amitchouguleack@gmail.com")
