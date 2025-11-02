@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 # --- Page Configuration ---
 st.set_page_config(
@@ -37,11 +38,13 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 
 # ✅ Local Profile Image with Rounded Styling
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
-try:
-    st.markdown('<img src="images/profile2.jpg" class="profile-pic">',
-                unsafe_allow_html=True)
+profile_path = "images/profile2.jpg"
+
+if os.path.exists(profile_path):
+    st.markdown(
+        f'<img src="{profile_path}" class="profile-pic">', unsafe_allow_html=True)
     st.caption("Click image to visit LinkedIn 😄")
-except Exception:
+else:
     st.warning("⚠️ Profile image not found. Please check 'images/profile2.jpg'.")
     st.write("Click below to visit LinkedIn:")
 
