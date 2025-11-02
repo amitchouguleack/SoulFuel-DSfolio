@@ -20,15 +20,12 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# Profile Image
+# Profile Image + LinkedIn
 profile_url = "https://images.unsplash.com/photo-1612832021080-39f2b95bcbf1?fit=crop&w=400&h=400"
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
-
 st.image(profile_url, width=220, caption="Click image to visit LinkedIn 😄")
 if st.button("Visit LinkedIn"):
-    st.experimental_set_query_params(linkedin=linkedin_url)
-    st.write(f"[Click here to open LinkedIn]({linkedin_url})")
-
+    st.markdown(f"[Click here to open LinkedIn]({linkedin_url})")
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
@@ -92,7 +89,7 @@ projects = [
 for proj in projects:
     st.subheader(proj["title"])
     st.write(proj["desc"])
-    st.image(proj["img"], use_column_width=True)
+    st.image(proj["img"], width=400)
     st.markdown(f"[View GitHub Repo]({proj['link']})")
     st.markdown("---")
 
