@@ -7,6 +7,21 @@ st.set_page_config(
     layout="wide"
 )
 
+# --- Custom CSS for Rounded Profile Image ---
+st.markdown("""
+    <style>
+        .profile-pic {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # --- About Me ---
 st.title("🔥 SoulFuel-DSfolio")
 st.header("👨‍💻 About Me")
@@ -20,13 +35,14 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Local Profile Image with Error Handling
+# ✅ Local Profile Image with Rounded Styling
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 try:
-    st.image("images/profile.jpg", width=400,
-             caption="Click image to visit LinkedIn 😄")
+    st.markdown('<img src="images/profile2.jpg" class="profile-pic">',
+                unsafe_allow_html=True)
+    st.caption("Click image to visit LinkedIn 😄")
 except Exception:
-    st.warning("⚠️ Profile image not found. Please check 'images/profile.jpg'.")
+    st.warning("⚠️ Profile image not found. Please check 'images/profile2.jpg'.")
     st.write("Click below to visit LinkedIn:")
 
 if st.button("Visit LinkedIn"):
