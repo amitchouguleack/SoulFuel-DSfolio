@@ -1,67 +1,45 @@
-📊 SoulFuel-DSfolio
-An interactive, affirmation-powered, and system-first Data Science portfolio built entirely with Python + Streamlit — no HTML, CSS, or JavaScript required 🚫🧩
+# 📊 SoulFuel-DSfolio
 
-🚀 Overview
-If you're deep into AI, ML, DL, or Data Engineering, and you live in Python 🐍 — why wrestle with bloated JavaScript frameworks just to showcase your brilliance?
+A fully Python-powered AI/ML portfolio built with Streamlit — no HTML, CSS, or JavaScript required 🚫🧩
 
-Introducing SoulFuel DSfolio — your personal portfolio, reimagined as a plug-and-play ritual for visibility, impact, and momentum 💥
+🔗 **Live Demo:** [soulfuel-dsfolio.streamlit.app](https://soulfuel-dsfolio-aci6rqxwahqjrzvbbqok4y.streamlit.app)
 
-🧠 Features
-👤 About Me section with profile image and affirmations
+---
 
-🛠️ Skills section covering AI, ML, DL, DevOps, MLOps, and system design
+## 👨‍💻 About Me
 
-🚀 Projects with visuals, GitHub links, and SoulFuel impact statements
+I'm Amit Chougule — an AI/ML Architect & Product Engineer based in Pennsylvania, with 7+ years of experience designing intelligent systems, full-stack ML platforms, and scalable AI solutions.
 
-📊 Kaggle Datasets with thumbnails and dataset links
+I specialize in GenAI, MLOps, and real-time data pipelines across healthcare, retail, and manufacturing. My approach blends ethical building, fast learning, and system-first deployment — turning business goals into measurable, data-driven impact.
 
-📚 Research & Publications with paper/blog links and branded visuals
+SoulFuel-DSfolio is my living portfolio: a showcase of original AI/ML projects built for speed, clarity, and recruiter-readiness.
 
-🧭 Experience & Education timelines with clarity-first layout
+---
 
-🏅 Certifications with image previews and verification links
+## 🚀 Overview
 
-🔄 Toggle between Sidebar Navigation or Scroll Mode
+SoulFuel-DSfolio is a clarity-first, impact-driven portfolio for AI/ML engineers who build real systems. Designed to showcase original projects, technical depth, and professional experience — all in a fast, Python-native interface.
 
-💯 Built 100% using Streamlit — no fluff, just Python
+Whether you're applying for roles, sharing your work, or building your brand, this portfolio helps you stand out without the noise.
 
-⚙️ Installation
-🔁 Clone the repo
+---
 
-bash
+## 🧠 Features
+
+- 👤 **About Me** section with profile image and summary
+- 🛠️ **Skills** section covering AI, ML, DL, DevOps, MLOps, and system design
+- 🚀 **Projects** with GitHub links and performance metrics
+- 🧭 **Experience & Education** with timeline layout
+- 🔄 Toggle between **Sidebar Navigation** or **Single Page Scroll**
+- 💯 Built entirely with Streamlit — simple, fast, and Python-native
+
+---
+
+## ⚙️ Installation
+
+```bash
 git clone https://github.com/amitchouguleack/SoulFuel_DSfolio.git
 cd SoulFuel_DSfolio
-📦 Install required Python packages
-
-bash
 pip install streamlit pillow
-🧪 Run the app
-
-bash
 streamlit run app.py
-🌐 Open browser at: http://localhost:8501
-
-✨ Customization
-Update your content effortlessly:
-
-📝 Text and links → in app.py
-
-🖼️ Images → drop into images/ folder or update paths
-
-🧩 Sections → Add new functions like def soulfuel_section() or remix existing ones
-
-Choose your vibe:
-
-🧭 Sidebar Navigation Mode → Clean UX like a dashboard
-
-📜 Single Page Scroll Mode → Classic portfolio feel
-
-🧬 Credits
-Built with Streamlit
-
-Designed for Python-first AI/ML engineers who build systems, not just scripts 🧠⚙️
-
-📝 License
-Open-source under the MIT License 🆓
-
-Made with 🔥 by Amit Chougule Project: SoulFuel DSfolio — where your data science journey becomes a branded ritual 🚀
+```
