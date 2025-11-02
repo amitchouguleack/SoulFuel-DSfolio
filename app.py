@@ -20,8 +20,8 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# Profile Image + LinkedIn
-profile_url = "https://images.unsplash.com/photo-1612832021080-39f2b95bcbf1?fit=crop&w=400&h=400"
+# ✅ Fixed Profile Image
+profile_url = "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400"
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 st.image(profile_url, width=220, caption="Click image to visit LinkedIn 😄")
 if st.button("Visit LinkedIn"):
@@ -75,13 +75,13 @@ projects = [
     {
         "title": "SoulMonitor",
         "desc": "Health AI model analyzing wellness data for personalized recommendations.",
-        "img": "https://images.unsplash.com/photo-1576765607924-bcd3b1e57c7b?fit=crop&w=800&q=80",
+        "img": "https://images.pexels.com/photos/8370753/pexels-photo-8370753.jpeg?auto=compress&cs=tinysrgb&w=400",
         "link": "https://github.com/amitchouguleack/SoulMonitor"
     },
     {
         "title": "End-to-End ML Pipeline",
         "desc": "A complete ML workflow from preprocessing to deployment — reduced deployment time by 30%.",
-        "img": "https://images.unsplash.com/photo-1555949963-aa79dcee981d?fit=crop&w=800&q=80",
+        "img": "https://images.pexels.com/photos/6693654/pexels-photo-6693654.jpeg?auto=compress&cs=tinysrgb&w=400",
         "link": "https://github.com/amitchouguleack/end-to-end-ml-pipeline"
     },
 ]
