@@ -42,14 +42,15 @@ profile_path = "images/profile2.jpg"
 
 if os.path.exists(profile_path):
     st.markdown(
-        f'<img src="{profile_path}" class="profile-pic">', unsafe_allow_html=True)
+        f'<a href="{linkedin_url}" target="_blank"><img src="{profile_path}" class="profile-pic"></a>',
+        unsafe_allow_html=True
+    )
     st.caption("Click image to visit LinkedIn 😄")
 else:
     st.warning("⚠️ Profile image not found. Please check 'images/profile2.jpg'.")
     st.write("Click below to visit LinkedIn:")
-
-if st.button("Visit LinkedIn"):
-    st.markdown(f"[Click here to open LinkedIn]({linkedin_url})")
+    if st.button("Visit LinkedIn"):
+        st.markdown(f"[Click here to open LinkedIn]({linkedin_url})")
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
@@ -77,44 +78,51 @@ with col2:
 
 # --- Projects ---
 st.header("🚀 Featured Projects")
+
 projects = [
     {
         "title": "AI-Powered Investment Navigator",
         "desc": "A financial assistant offering stock suggestions, news analysis, and real-time portfolio tracking.",
         "img": "https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "link": "https://github.com/amitchouguleack/AI-Powered-Investment-Navigator-main"
+        "url": "https://huggingface.co/spaces/amitchouguleack/AI-Powered-Investment-Navigator"
     },
     {
         "title": "USA Housing Price Predictor",
         "desc": "Predicts housing prices using regression and tree-based models. Achieved 88% accuracy.",
         "img": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?fit=crop&w=800&q=80",
-        "link": "https://github.com/amitchouguleack/USA-PricePredict-AI-Powered"
+        "url": "https://usa-pricepredict-ai-powered-house-price-prediction-n5kvqcs6dgi.streamlit.app/"
     },
     {
         "title": "Laychatbot",
         "desc": "A LangChain + OpenAI retrieval chatbot that automates Q&A with 95% accuracy.",
         "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?fit=crop&w=800&q=80",
-        "link": "https://github.com/amitchouguleack/Laychatbot"
+        "url": "https://lazychatbot-8epwk7myq9higgrvinv6us.streamlit.app/"
     },
     {
         "title": "SoulMonitor",
         "desc": "Health AI model analyzing wellness data for personalized recommendations.",
         "img": "https://images.pexels.com/photos/8370753/pexels-photo-8370753.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "link": "https://github.com/amitchouguleack/SoulMonitor"
+        "url": "https://dezac4jfrtjmnpt6vtbxko.streamlit.app/"
     },
     {
         "title": "End-to-End ML Pipeline",
         "desc": "A complete ML workflow from preprocessing to deployment — reduced deployment time by 30%.",
         "img": "https://images.pexels.com/photos/6693654/pexels-photo-6693654.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "link": "https://github.com/amitchouguleack/end-to-end-ml-pipeline"
+        "url": "https://end-to-end-ml-pipeline-lite-2gwo5pj2vhqzhzaew3pyq4.streamlit.app/"
     },
 ]
 
 for proj in projects:
     st.subheader(proj["title"])
     st.write(proj["desc"])
-    st.image(proj["img"], width=400)
-    st.markdown(f"[View GitHub Repo]({proj['link']})")
+    st.markdown(
+        f"""
+        <a href="{proj['url']}" target="_blank">
+            <img src="{proj['img']}" alt="{proj['title']}" width="400">
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
     st.markdown("---")
 
 # --- Experience & Education ---
