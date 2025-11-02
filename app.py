@@ -28,31 +28,30 @@ def about_me():
         img = Image.open(profile_path)
         st.image(img, caption="Amit Chougule", use_container_width=True)
     else:
-        st.warning("Profile image not found in 'images/profile.jpg'.")
+        st.warning("Profile image not found in 'images/profile.pic.jpg'.")
 
 
 def skills():
     st.header("⚙️ Core Skills — Expanding & Pushing Limits")
     with st.expander("AI/ML & Data Science"):
         st.write(
-            "- Python, PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, OpenCV, YOLO")
+            "Python, PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, OpenCV, YOLO")
         st.write(
-            "- NLP, LLM Fine-tuning, Computer Vision, Pandas, NumPy, Matplotlib, Plotly, XGBoost, LightGBM")
+            "NLP, LLM Fine-tuning, Computer Vision, Pandas, NumPy, Matplotlib, Plotly, XGBoost, LightGBM")
     with st.expander("Backend & Cloud"):
-        st.write("- FastAPI, Django, Flask, Node.js, Express, REST, GraphQL")
-        st.write("- MLflow, Docker, Kubernetes, AWS SageMaker, GCP Vertex AI, Azure ML, CI/CD, Airflow, Spark, Kafka, Terraform")
+        st.write("FastAPI, Django, Flask, Node.js, Express, REST, GraphQL")
+        st.write("MLflow, Docker, Kubernetes, AWS SageMaker, GCP Vertex AI, Azure ML, CI/CD, Airflow, Spark, Kafka, Terraform")
     with st.expander("Frontend & UI"):
         st.write(
-            "- React.js, Next.js, Angular, Tailwind, Material UI, Redux, D3.js, HTML5, CSS3")
+            "React.js, Next.js, Angular, Tailwind, Material UI, Redux, D3.js, HTML5, CSS3")
     with st.expander("Databases"):
         st.write(
-            "- PostgreSQL, MongoDB, MySQL, Redis, Pinecone, FAISS, Elasticsearch, Neo4j, Snowflake, BigQuery")
+            "PostgreSQL, MongoDB, MySQL, Redis, Pinecone, FAISS, Elasticsearch, Neo4j, Snowflake, BigQuery")
     with st.expander("Programming & Tools"):
         st.write(
-            "- JavaScript/TypeScript, C++, Git, Linux, Bash, Jupyter, VS Code, Postman")
+            "JavaScript/TypeScript, C++, Git, Linux, Bash, Jupyter, VS Code, Postman")
     with st.expander("Additional Expertise"):
-        st.write(
-            "- MLOps, AI Productization, Real-Time Analytics, RPA/Automation, Healthcare & Manufacturing AI")
+        st.write("MLOps, AI Productization, Real-Time Data Analytics, RPA/Automation, Healthcare & Manufacturing AI Solutions")
 
 
 def projects():
