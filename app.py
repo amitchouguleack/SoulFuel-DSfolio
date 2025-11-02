@@ -20,13 +20,17 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Fixed Profile Image (Local)
+# ✅ Local Profile Image with Error Handling
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
-st.image("images/profile.png", width=400,
-         caption="Click image to visit LinkedIn 😄")
+try:
+    st.image("images/profile.png", width=400,
+             caption="Click image to visit LinkedIn 😄")
+except Exception:
+    st.warning("⚠️ Profile image not found. Please check 'images/profile.png'.")
+    st.write("Click below to visit LinkedIn:")
+
 if st.button("Visit LinkedIn"):
     st.markdown(f"[Click here to open LinkedIn]({linkedin_url})")
-
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
