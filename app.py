@@ -20,12 +20,13 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Fixed Profile Image
-profile_url = "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400"
+# ✅ Fixed Profile Image (Local)
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
-st.image(profile_url, width=220, caption="Click image to visit LinkedIn 😄")
+st.image("images/profile.png", width=400,
+         caption="Click image to visit LinkedIn 😄")
 if st.button("Visit LinkedIn"):
     st.markdown(f"[Click here to open LinkedIn]({linkedin_url})")
+
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
