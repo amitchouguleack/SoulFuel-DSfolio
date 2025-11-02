@@ -18,9 +18,9 @@ def about_me():
         """
         I'm Amit Chougule — an AI/ML Architect & Product Engineer based in Pennsylvania, with 7+ years of experience designing intelligent systems, full-stack ML platforms, and scalable AI solutions.
 
-        I specialize in GenAI, MLOps, and real-time data pipelines across healthcare, retail, and manufacturing. My approach blends ethical building, fast learning, and remix-first deployment — turning business goals into measurable, data-driven impact.
+        I specialize in GenAI, MLOps, and real-time data pipelines across healthcare, retail, and manufacturing. My approach blends ethical building, fast learning, and system-first deployment — turning business goals into measurable, data-driven impact.
 
-        SoulFuel-DSfolio is my living portfolio: a remix-first showcase of AI/ML projects built for speed, clarity, and recruiter-readiness.
+        SoulFuel-DSfolio is my living portfolio: a showcase of original AI/ML projects built for speed, clarity, and recruiter-readiness.
         """
     )
     profile_path = os.path.join("images", "profile.jpg")
@@ -28,7 +28,7 @@ def about_me():
         img = Image.open(profile_path)
         st.image(img, caption="Amit Chougule", use_container_width=True)
     else:
-        st.warning("Profile image not found in 'images/profile.pic.jpg'.")
+        st.warning("Profile image not found in 'images/profile.jpg'.")
 
 
 def skills():
@@ -55,7 +55,7 @@ def skills():
 
 
 def projects():
-    st.header("🚀 Remix Projects")
+    st.header("🚀 Featured Projects")
 
     st.subheader("1. AI-Powered Investment Navigator")
     st.write("Engineered a financial assistant offering stock suggestions, news analysis, and real-time portfolio tracking. Increased user decision confidence by 25%.")
@@ -109,7 +109,7 @@ def experience_education():
 # --- Main app ---
 st.title("🔥 SoulFuel-DSfolio")
 st.markdown(
-    "**Explore my remix-first portfolio of AI/ML projects — built for speed, impact, and affirmation.**")
+    "**Explore my portfolio of AI/ML projects — built for speed, impact, and clarity.**")
 
 nav_mode = st.radio(
     "Choose Navigation Mode:",
@@ -149,6 +149,6 @@ else:
 # Footer
 st.markdown("---")
 st.markdown(
-    "Made with 🔥 by Amit Chougule | SoulFuel Remix Sprint | 100% Python-powered")
+    "Made with 🔥 by Amit Chougule | SoulFuel DSfolio | 100% Python-powered")
 st.markdown("📧 amitchouguleack@gmail.com")
 st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/amit-chougule-software-developer/) | [🔗 GitHub](https://github.com/amitchouguleack)")
