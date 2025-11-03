@@ -46,7 +46,7 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Clickable Profile Image
+# ✅ Fixed Profile Image Block (Clickable + Hoverable)
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 profile_path = "images/profile2.jpg"
 
@@ -57,7 +57,7 @@ if os.path.exists(profile_path):
             <a href="{linkedin_url}" target="_blank">
                 <img src="{profile_path}" class="profile-img" alt="LinkedIn Profile">
             </a>
-            <p style="text-align:center;">Click image to visit LinkedIn 😄</p>
+            <p style="text-align:center;">Click image to visit LinkedIn 🔗</p>
         </div>
         """,
         unsafe_allow_html=True
