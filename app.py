@@ -25,10 +25,15 @@ st.markdown("""
         .profile-img {
             width: 200px;
             border-radius: 50%;
-            transition: transform 0.3s ease;
+            margin-bottom: 10px;
         }
-        .profile-img:hover {
-            transform: scale(1.05);
+        .icon-links img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.2s ease;
+        }
+        .icon-links img:hover {
+            transform: scale(1.2);
         }
     </style>
 """, unsafe_allow_html=True)
@@ -38,33 +43,40 @@ st.title("🔥 SoulFuel-DSfolio")
 st.header("👨‍💻 About Me")
 st.write(
     """
-Hey there! I'm **Amit Chougule** — an **AI/ML Architect & Product Engineer** based in Pennsylvania 🧠💻  
+Hey there! I'm **Amit Chougule** — an **AI/ML Architect & Product Engineer** based in Pennsylvania 🧠💻
 With 7+ years of experience building intelligent systems, full-stack ML platforms, and scalable AI solutions, I turn data into decisions and prototypes into products.
 
-I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare, retail, and manufacturing.  
+I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare, retail, and manufacturing.
 **SoulFuel-DSfolio** is my living portfolio — a launchpad of AI/ML projects built for speed, clarity, and recruiter-readiness 🚀
 """
 )
 
-# ✅ Fixed Profile Image Block (Clickable + Hoverable)
+# ✅ Centered Profile Image + Clickable Icons
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
+github_url = "https://github.com/amitchouguleack"
 profile_path = "images/profile2.jpg"
 
 if os.path.exists(profile_path):
     st.markdown(
         f"""
         <div style="text-align: center;">
-            <a href="{linkedin_url}" target="_blank">
-                <img src="{profile_path}" class="profile-img" alt="LinkedIn Profile">
-            </a>
-            <p style="text-align:center;">Click image to visit LinkedIn 🔗</p>
+            <img src="{profile_path}" class="profile-img" alt="Profile Image">
+            <div class="icon-links">
+                <a href="{linkedin_url}" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+                <a href="{github_url}" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                </a>
+            </div>
         </div>
         """,
         unsafe_allow_html=True
     )
 else:
     st.warning("⚠️ Profile image not found. Please check 'images/profile2.jpg'.")
-    st.markdown(f"[Visit LinkedIn]({linkedin_url})", unsafe_allow_html=True)
+    st.markdown(
+        f"[LinkedIn]({linkedin_url}) | [GitHub]({github_url})", unsafe_allow_html=True)
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
@@ -159,4 +171,4 @@ st.write(
 st.markdown("---")
 st.write("Made with 🔥 by **Amit Chougule** | SoulFuel DSfolio | 100% Python-powered")
 st.write("📧 amitchouguleack@gmail.com")
-st.write("[LinkedIn](https://www.linkedin.com/in/amit-chougule-software-developer/) | [GitHub](https://github.com/amitchouguleack)")
+st.write("[LinkedIn](https://www.linkedin.com/in/
