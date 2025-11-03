@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- Custom CSS for Rounded Profile Image ---
+# --- Custom CSS ---
 st.markdown("""
     <style>
         .profile-pic {
@@ -19,6 +19,16 @@ st.markdown("""
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        .project-img {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .project-img:hover {
+            transform: scale(1.02);
         }
     </style>
 """, unsafe_allow_html=True)
@@ -36,9 +46,9 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Local Profile Image with Rounded Styling
+# ✅ Local Profile Image
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
-profile_path = "images/profile2.jpg"
+profile_path = "images/profile.jpg"
 
 if os.path.exists(profile_path):
     st.markdown(
@@ -47,7 +57,7 @@ if os.path.exists(profile_path):
     )
     st.caption("Click image to visit LinkedIn 😄")
 else:
-    st.warning("⚠️ Profile image not found. Please check 'images/profile2.jpg'.")
+    st.warning("⚠️ Profile image not found. Please check 'images/profile.jpg'.")
     st.write("Click below to visit LinkedIn:")
     if st.button("Visit LinkedIn"):
         st.markdown(f"[Click here to open LinkedIn]({linkedin_url})")
@@ -117,9 +127,11 @@ for proj in projects:
     st.write(proj["desc"])
     st.markdown(
         f"""
-        <a href="{proj['url']}" target="_blank">
-            <img src="{proj['img']}" alt="{proj['title']}" width="400">
-        </a>
+        <div style="text-align: center; padding: 10px;">
+            <a href="{proj['url']}" target="_blank">
+                <img src="{proj['img']}" alt="{proj['title']}" class="project-img">
+            </a>
+        </div>
         """,
         unsafe_allow_html=True
     )
