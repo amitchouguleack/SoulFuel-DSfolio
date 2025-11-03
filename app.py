@@ -95,8 +95,10 @@ projects = [
 for proj in projects:
     st.subheader(proj["title"])
     st.write(proj["desc"])
-    st.markdown(f"[🔗 View Demo]({proj['url']})", unsafe_allow_html=True)
-    st.image(proj["img"], use_column_width=True)
+    st.markdown(
+        f'<a href="{proj["url"]}" target="_blank"><img src="{proj["img"]}" width="800" height="450" style="object-fit: cover; border-radius: 10px;"></a>',
+        unsafe_allow_html=True
+    )
     st.markdown("---")
 
 # --- Experience & Education ---
