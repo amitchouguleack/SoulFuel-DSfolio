@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- Custom CSS for Hover Effects ---
+# --- Custom CSS ---
 st.markdown("""
     <style>
         .clickable-img {
@@ -51,7 +51,7 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Centered Profile Image + Clickable Icons
+# ✅ Profile Image + Clickable Icons
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 github_url = "https://github.com/amitchouguleack"
 profile_path = "images/profile2.jpg"
@@ -108,7 +108,7 @@ st.header("🚀 Featured Projects")
 projects = [
     {
         "title": "AI-Powered Investment Navigator",
-        "desc": "📈 Built with Hugging Face + Streamlit, this AI assistant delivers real-time stock tips, sentiment analysis, and portfolio tracking. Used by 100+ users weekly to make smarter investment decisions (and avoid panic-selling on Mondays).",
+        "desc": "📈 Built with Hugging Face + Streamlit, this AI assistant delivers real-time stock tips, sentiment analysis, and portfolio tracking. Used by 100+ users weekly to make smarter investment decisions.",
         "img": "https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=800",
         "url": "https://huggingface.co/spaces/amitchouguleack/AI-Powered-Investment-Navigator"
     },
@@ -132,7 +132,7 @@ projects = [
     },
     {
         "title": "End-to-End ML Pipeline",
-        "desc": "🛠️ Full ML pipeline from preprocessing to deployment using FastAPI, Docker, and CI/CD. Reduced deployment time by 30% and supports modular plug-and-play architecture. Because ML shouldn’t live in Jupyter forever.",
+        "desc": "🛠️ Full ML pipeline from preprocessing to deployment using FastAPI, Docker, and CI/CD. Reduced deployment time by 30% and supports modular plug-and-play architecture.",
         "img": "https://images.pexels.com/photos/6693654/pexels-photo-6693654.jpeg?auto=compress&cs=tinysrgb&w=400",
         "url": "https://end-to-end-ml-pipeline-lite-2gwo5pj2vhqzhzaew3pyq4.streamlit.app/"
     },
@@ -171,4 +171,4 @@ st.write(
 st.markdown("---")
 st.write("Made with 🔥 by **Amit Chougule** | SoulFuel DSfolio | 100% Python-powered")
 st.write("📧 amitchouguleack@gmail.com")
-st.write("[LinkedIn](https://www.linkedin.com/in/
+st.write("[LinkedIn](https://www.linkedin.com/in/amit-chougule-software-developer/) | [GitHub](https://github.com/amitchouguleack)")
