@@ -38,32 +38,32 @@ st.title("🔥 SoulFuel-DSfolio")
 st.header("👨‍💻 About Me")
 st.write(
     """
-Hey there! I'm **Amit Chougule** — an **AI/ML Architect & Product Engineer** based in Pennsylvania 🧠💻  
+Hey there! I'm **Amit Chougule** — an **AI/ML Architect & Product Engineer** based in Pennsylvania 🧠💻
 With 7+ years of experience building intelligent systems, full-stack ML platforms, and scalable AI solutions, I turn data into decisions and prototypes into products.
 
-I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare, retail, and manufacturing.  
+I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare, retail, and manufacturing.
 **SoulFuel-DSfolio** is my living portfolio — a launchpad of AI/ML projects built for speed, clarity, and recruiter-readiness 🚀
 """
 )
 
-# ✅ Profile Image + Clickable Icons
+# ✅ Centered Profile Image ABOVE LinkedIn & GitHub Icons
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 github_url = "https://github.com/amitchouguleack"
 profile_path = "images/profile2.jpg"
 
 if os.path.exists(profile_path):
-    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-    st.image(profile_path, width=200)
     st.markdown(
         f"""
-        <div class="icon-links" style="text-align: center;">
-            <a href="{linkedin_url}" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-            </a>
-            <a href="{github_url}" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-            </a>
-        </div>
+        <div style="text-align: center;">
+            <img src="{profile_path}" style="width:200px; border-radius:50%; margin-bottom:10px;" alt="Profile Image">
+            <div style="margin-top:10px;">
+                <a href="{linkedin_url}" target="_blank" style="margin-right:20px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+                </a>
+                <a href="{github_url}" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
+                </a>
+            </div>
         </div>
         """,
         unsafe_allow_html=True
@@ -161,6 +161,7 @@ st.write(
     "- 📚 Generative AI, LangChain Agents, RLHF, Multi-Cloud MLOps, Zero Trust Security\n"
     "- 🧠 Ongoing: Federated Learning, XAI, Serverless Deployments, Vector Databases, Data Lakehouses"
 )
+
 
 # --- Footer ---
 st.markdown("---")
