@@ -13,11 +13,11 @@ st.title("🔥 SoulFuel-DSfolio")
 st.header("👨‍💻 About Me")
 st.write(
     """
-I'm **Amit Chougule** — an **AI/ML Architect & Product Engineer** based in Pennsylvania,
-with 7+ years of experience designing intelligent systems, full-stack ML platforms, and scalable AI solutions.
+Hey there! I'm **Amit Chougule** — an **AI/ML Architect & Product Engineer** based in Pennsylvania 🧠💻  
+With 7+ years of experience building intelligent systems, full-stack ML platforms, and scalable AI solutions, I turn data into decisions and prototypes into products.
 
-I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare, retail, and manufacturing.
-**SoulFuel-DSfolio** is my living portfolio: a showcase of AI/ML projects built for speed, clarity, and recruiter-readiness.
+I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare, retail, and manufacturing.  
+**SoulFuel-DSfolio** is my living portfolio — a launchpad of AI/ML projects built for speed, clarity, and recruiter-readiness 🚀
 """
 )
 
@@ -36,24 +36,24 @@ else:
 st.header("⚙️ Core Skills")
 col1, col2 = st.columns(2)
 with col1:
-    st.subheader("AI/ML & Data Science")
+    st.subheader("🧠 AI/ML & Data Science")
     st.write(
         "- Python, PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, OpenCV, YOLO\n"
         "- NLP, LLM Fine-tuning, Computer Vision, Pandas, NumPy, Matplotlib, Plotly, XGBoost, LightGBM"
     )
-    st.subheader("Backend & Cloud")
+    st.subheader("☁️ Backend & Cloud")
     st.write(
         "- FastAPI, Django, Flask, Node.js, Express, REST, GraphQL\n"
         "- MLflow, Docker, Kubernetes, AWS SageMaker, GCP Vertex AI, Azure ML, CI/CD, Airflow, Spark, Kafka, Terraform"
     )
 with col2:
-    st.subheader("Frontend & UI")
+    st.subheader("🎨 Frontend & UI")
     st.write(
         "- React.js, Next.js, Angular, Tailwind, Material UI, Redux, D3.js, HTML5, CSS3")
-    st.subheader("Databases & Additional")
+    st.subheader("🗃️ Databases & More")
     st.write(
         "- PostgreSQL, MongoDB, MySQL, Redis, Pinecone, FAISS, Elasticsearch, Neo4j, Snowflake, BigQuery\n"
-        "- MLOps, AI Productization, Real-Time Data Analytics, RPA/Automation, Healthcare & Manufacturing AI Solutions"
+        "- MLOps, AI Productization, Real-Time Analytics, RPA, Healthcare & Manufacturing AI Solutions"
     )
 
 # --- Projects ---
@@ -62,31 +62,31 @@ st.header("🚀 Featured Projects")
 projects = [
     {
         "title": "AI-Powered Investment Navigator",
-        "desc": "A financial assistant offering stock suggestions, news analysis, and real-time portfolio tracking.",
+        "desc": "📈 Built with Hugging Face + Streamlit, this AI assistant delivers real-time stock tips, sentiment analysis, and portfolio tracking. Used by 100+ users weekly to make smarter investment decisions (and avoid panic-selling on Mondays).",
         "img": "https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=800",
         "url": "https://huggingface.co/spaces/amitchouguleack/AI-Powered-Investment-Navigator"
     },
     {
         "title": "USA Housing Price Predictor",
-        "desc": "Predicts housing prices using regression and tree-based models. Achieved 88% accuracy.",
+        "desc": "🏠 Predicts housing prices with 88% accuracy using XGBoost and Random Forest. Trained on 25K+ records, deployed with Streamlit, and perfect for anyone wondering, 'Can I afford this zip code?'",
         "img": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?fit=crop&w=800&q=80",
         "url": "https://usa-pricepredict-ai-powered-house-price-prediction-n5kvqcs6dgi.streamlit.app/"
     },
     {
         "title": "Laychatbot",
-        "desc": "A LangChain + OpenAI retrieval chatbot that automates Q&A with 95% accuracy.",
+        "desc": "🤖 LangChain + OpenAI chatbot with 95% retrieval accuracy. Handles complex Q&A from custom docs using embeddings + vector search. Basically, your documents' new best friend.",
         "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?fit=crop&w=800&q=80",
         "url": "https://lazychatbot-8epwk7myq9higgrvinv6us.streamlit.app/"
     },
     {
         "title": "SoulMonitor",
-        "desc": "Health AI model analyzing wellness data for personalized recommendations.",
+        "desc": "💓 Health AI dashboard analyzing sleep, heart rate, and activity. Built with Pandas + Plotly. Offers personalized wellness insights across 30+ metrics — no yoga mat required.",
         "img": "https://images.pexels.com/photos/8370753/pexels-photo-8370753.jpeg?auto=compress&cs=tinysrgb&w=400",
         "url": "https://dezac4jfrtjmnpt6vtbxko.streamlit.app/"
     },
     {
         "title": "End-to-End ML Pipeline",
-        "desc": "A complete ML workflow from preprocessing to deployment — reduced deployment time by 30%.",
+        "desc": "🛠️ Full ML pipeline from preprocessing to deployment using FastAPI, Docker, and CI/CD. Reduced deployment time by 30% and supports modular plug-and-play architecture. Because ML shouldn’t live in Jupyter forever.",
         "img": "https://images.pexels.com/photos/6693654/pexels-photo-6693654.jpeg?auto=compress&cs=tinysrgb&w=400",
         "url": "https://end-to-end-ml-pipeline-lite-2gwo5pj2vhqzhzaew3pyq4.streamlit.app/"
     },
@@ -105,14 +105,14 @@ for proj in projects:
 st.header("💼 Experience & Education")
 st.subheader("Experience")
 st.write(
-    "- Python Developer / Tech Support — Alcon Vision & Independent Projects (Jan 2023 – Present)\n"
-    "- Full Stack Developer — Ace Hardware (Mar 2020 – Nov 2022)\n"
-    "- Front-End Developer — Matel Manufacturing (Jan 2018 – Oct 2019)"
+    "- 🧪 Python Developer / Tech Support — Alcon Vision & Independent Projects (Jan 2023 – Present)\n"
+    "- 🛍️ Full Stack Developer — Ace Hardware (Mar 2020 – Nov 2022)\n"
+    "- 🏭 Front-End Developer — Matel Manufacturing (Jan 2018 – Oct 2019)"
 )
 st.subheader("Education & Learning")
 st.write(
-    "- Generative AI, LangChain Agents, RLHF, Multi-Cloud MLOps, Zero Trust Security\n"
-    "- Ongoing: Federated Learning, XAI, Serverless Deployments, Vector Databases, Data Lakehouses"
+    "- 📚 Generative AI, LangChain Agents, RLHF, Multi-Cloud MLOps, Zero Trust Security\n"
+    "- 🧠 Ongoing: Federated Learning, XAI, Serverless Deployments, Vector Databases, Data Lakehouses"
 )
 
 # --- Footer ---
