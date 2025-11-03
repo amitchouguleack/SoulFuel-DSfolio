@@ -23,13 +23,13 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 
 # ✅ Profile Image
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
-profile_path = "images/profile.jpg"
+profile_path = "images/profile2.jpg"
 
 if os.path.exists(profile_path):
     st.image(profile_path, caption="Click image to visit LinkedIn 😄", width=200)
     st.markdown(f"[Visit LinkedIn]({linkedin_url})", unsafe_allow_html=True)
 else:
-    st.warning("⚠️ Profile image not found. Please check 'images/profile.jpg'.")
+    st.warning("⚠️ Profile image not found. Please check 'images/profile2.jpg'.")
     st.markdown(f"[Visit LinkedIn]({linkedin_url})", unsafe_allow_html=True)
 
 # --- Skills ---
