@@ -8,6 +8,31 @@ st.set_page_config(
     layout="wide"
 )
 
+# --- Custom CSS for Hover Effects ---
+st.markdown("""
+    <style>
+        .clickable-img {
+            width: 800px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .clickable-img:hover {
+            transform: scale(1.03);
+        }
+        .profile-img {
+            width: 200px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # --- About Me ---
 st.title("🔥 SoulFuel-DSfolio")
 st.header("👨‍💻 About Me")
@@ -21,13 +46,22 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Profile Image
+# ✅ Clickable Profile Image
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 profile_path = "images/profile2.jpg"
 
 if os.path.exists(profile_path):
-    st.image(profile_path, caption="Click image to visit LinkedIn 😄", width=200)
-    st.markdown(f"[Visit LinkedIn]({linkedin_url})", unsafe_allow_html=True)
+    st.markdown(
+        f"""
+        <div style="text-align: center;">
+            <a href="{linkedin_url}" target="_blank">
+                <img src="{profile_path}" class="profile-img" alt="LinkedIn Profile">
+            </a>
+            <p style="text-align:center;">Click image to visit LinkedIn 😄</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 else:
     st.warning("⚠️ Profile image not found. Please check 'images/profile2.jpg'.")
     st.markdown(f"[Visit LinkedIn]({linkedin_url})", unsafe_allow_html=True)
@@ -96,7 +130,13 @@ for proj in projects:
     st.subheader(proj["title"])
     st.write(proj["desc"])
     st.markdown(
-        f'<a href="{proj["url"]}" target="_blank"><img src="{proj["img"]}" width="800" height="450" style="object-fit: cover; border-radius: 10px;"></a>',
+        f"""
+        <div style="text-align: center;">
+            <a href="{proj['url']}" target="_blank">
+                <img src="{proj['img']}" class="clickable-img" alt="{proj['title']}">
+            </a>
+        </div>
+        """,
         unsafe_allow_html=True
     )
     st.markdown("---")
