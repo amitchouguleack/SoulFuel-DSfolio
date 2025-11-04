@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 
 # --- Page Configuration ---
 st.set_page_config(
@@ -46,32 +45,28 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Centered Profile Image ABOVE LinkedIn & GitHub Icons
+# ✅ Fixed Profile Image (Hosted URL)
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 github_url = "https://github.com/amitchouguleack"
-profile_path = "images/profile2.jpg"
+# Replace with your preferred hosted image
+profile_img_url = "https://avatars.githubusercontent.com/u/122617172?v=4"
 
-if os.path.exists(profile_path):
-    st.markdown(
-        f"""
-        <div style="text-align: center;">
-            <img src="{profile_path}" style="width:200px; border-radius:50%; margin-bottom:10px;" alt="Profile Image">
-            <div style="margin-top:10px;">
-                <a href="{linkedin_url}" target="_blank" style="margin-right:20px;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
-                </a>
-                <a href="{github_url}" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
-                </a>
-            </div>
+st.markdown(
+    f"""
+    <div style="text-align: center;">
+        <img src="{profile_img_url}" style="width:200px; border-radius:50%; margin-bottom:10px;" alt="Profile Image">
+        <div style="margin-top:10px;">
+            <a href="{linkedin_url}" target="_blank" style="margin-right:20px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+            </a>
+            <a href="{github_url}" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
+            </a>
         </div>
-        """,
-        unsafe_allow_html=True
-    )
-else:
-    st.warning("⚠️ Profile image not found. Please check 'images/profile2.jpg'.")
-    st.markdown(
-        f"[LinkedIn]({linkedin_url}) | [GitHub]({github_url})", unsafe_allow_html=True)
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
@@ -161,7 +156,6 @@ st.write(
     "- 📚 Generative AI, LangChain Agents, RLHF, Multi-Cloud MLOps, Zero Trust Security\n"
     "- 🧠 Ongoing: Federated Learning, XAI, Serverless Deployments, Vector Databases, Data Lakehouses"
 )
-
 
 # --- Footer ---
 st.markdown("---")
