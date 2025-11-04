@@ -45,11 +45,10 @@ I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare
 """
 )
 
-# ✅ Fixed Profile Image (Hosted URL)
+# ✅ Funny Robot Profile Image
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 github_url = "https://github.com/amitchouguleack"
-# Replace with your preferred hosted image
-profile_img_url = "https://avatars.githubusercontent.com/u/122617172?v=4"
+profile_img_url = "https://copilot.microsoft.com/th/id/BCO.bc0a24a0-d922-46fa-91a0-27131ac42281.png"
 
 st.markdown(
     f"""
