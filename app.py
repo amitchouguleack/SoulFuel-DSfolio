@@ -34,16 +34,19 @@ st.markdown("""
 
 # --- About Me ---
 st.title("🔥 SoulFuel-DSfolio")
-st.header("👨‍💻 About Me")
+st.header("🧠 About Me")
 st.write(
     """
-Hey there! I'm **Amit Chougule** — an **AI/ML Architect & Product Engineer** based in Pennsylvania 🧠💻
-With 7+ years of experience building intelligent systems, full-stack ML platforms, and scalable AI solutions, I turn data into decisions and prototypes into products.
+Hi! I'm **Amit Chougule** — an **AI/ML Architect, Software Engineer & Product Builder** based in Pennsylvania 🧩💻  
+I’ve spent 7+ years turning data into decisions, prototypes into products, and coffee into code ☕⚙️
 
-I specialize in **GenAI, MLOps, and real-time data pipelines** across healthcare, retail, and manufacturing.
-**SoulFuel-DSfolio** is my living portfolio — a launchpad of AI/ML projects built for speed, clarity, and recruiter-readiness 🚀
+I specialize in **GenAI, MLOps, and real-time ML pipelines** — building full-stack systems that scale, sparkle ✨, and sometimes talk back (thanks LangChain 🤖)
+
+**SoulFuel-DSfolio** is my living portfolio: a launchpad of AI/ML projects built for speed, clarity, and recruiter-readiness 🚀  
+Let’s connect if you’re hiring, building something weird and wonderful, or just want to swap AI memes 🐙📡
 """
 )
+
 
 # ✅ Funny Robot Profile Image
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
