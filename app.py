@@ -161,9 +161,9 @@ for proj in projects:
 st.header("💼 Experience & Education")
 st.subheader("Experience")
 st.write(
-   - 🤖 AI/ML Engineer — Santander Bank & Independent Projects (Jan 2022 – Present)
-- 🛍️ Software Engineer — Ace Hardware Corporation (Mar 2019 – Nov 2021)
-- 📺 Software Engineer — QVC Corporation (Jan 2016 – Oct 2018)
+    AI/ML Engineer — Santander Bank & Independent Projects(Jan 2022 – Present)
+    - 🛍️ Software Engineer — Ace Hardware Corporation(Mar 2019 – Nov 2021)
+    - 📺 Software Engineer — QVC Corporation(Jan 2016 – Oct 2018)
 )
 st.subheader("Education & Learning")
 st.write(
