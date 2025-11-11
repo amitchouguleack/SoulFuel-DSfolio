@@ -169,6 +169,30 @@ for proj in projects:
 # --- Experience & Education ---
 st.header("💼 Experience & Education")
 
+st.subheader("Experience")
+st.write("""
+- 🤖 AI/ML Engineer - Santander Bank & Independent Projects (Jan 2022 - Present)  
+    • Engineered AI-driven automation systems improving operational efficiency by 25%  
+    • Built chatbots, recommendation engines, and ML pipelines for healthcare & retail  
+    • Customized open-source AI frameworks for scalability and production readiness  
+
+- 🛍️ Software Engineer - Ace Hardware Corporation (Mar 2019 - Nov 2021)  
+    • Developed dashboards & inventory systems using Flask, Streamlit, REST APIs  
+    • Integrated ML models for demand forecasting, improving efficiency by 30%  
+    • Deployed scalable apps on AWS & Heroku with CI/CD pipelines  
+
+- 📺 Software Engineer - QVC Corporation (Jan 2016 - Oct 2018)  
+    • Built responsive dashboards with React, Bootstrap, and CSS  
+    • Streamlined API integrations, reducing bug reports by 40%  
+    • Developed reusable UI components and documentation
+""")
+
+st.subheader("Education & Learning")
+st.write("""
+- 📚 Generative AI, LangChain Agents, RLHF, Multi-Cloud MLOps, Zero Trust Security  
+- 🧠 Ongoing: Federated Learning, XAI, Serverless Deployments, Vector Databases, Data Lakehouses
+""")
+
 
 # --- Footer ---
 st.markdown("---")
