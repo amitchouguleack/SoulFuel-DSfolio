@@ -29,82 +29,94 @@ st.markdown("""
         .icon-links img:hover {
             transform: scale(1.2);
         }
+        .center-title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .center-subtitle {
+            text-align: center;
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
     </style>
 """, unsafe_allow_html=True)
 
+# --- Centered Title ---
+st.markdown('<div class="center-title">🔥 SoulFuel-DSfolio</div>',
+            unsafe_allow_html=True)
+st.markdown('<div class="center-subtitle">by Amit Chougule</div>',
+            unsafe_allow_html=True)
+
 # --- About Me ---
-st.title("🔥 SoulFuel-DSfolio")
 st.header("🧠 About Me")
-st.write(
-    """
-Hi! I'm Amit Chougule — an AI/ML Architect, Software Engineer & Product Builder based in Pennsylvania 🧩💻 I’ve spent 9+ years designing and deploying intelligent systems, turning data into decisions, prototypes into products, and coffee into code ☕⚙️
+st.write("""
+Hi! I'm Amit Chougule — an AI/ML Architect, Software Engineer & Product Builder based in Pennsylvania 🧩💻  
+I’ve spent 9+ years designing and deploying intelligent systems, turning data into decisions, prototypes into products, and coffee into code ☕⚙️
 
-I specialize in Generative AI, MLOps, and real‑time ML pipelines — building full‑stack systems that scale, sparkle ✨, and sometimes talk back (thanks LangChain 🤖). My expertise spans cloud‑native AI deployments, recommendation systems, chatbots, dashboards, and computer vision, with a proven track record of delivering production‑grade solutions that drive measurable business impact.
+I specialize in Generative AI, MLOps, and real-time ML pipelines — building full-stack systems that scale, sparkle ✨, and sometimes talk back (thanks LangChain 🤖).  
+My expertise spans cloud-native AI deployments, recommendation systems, chatbots, dashboards, and computer vision, with a proven track record of delivering production-grade solutions that drive measurable business impact.
 
-SoulFuel‑DSfolio is my living portfolio: a launchpad of AI/ML projects built for speed, clarity, and recruiter‑readiness 🚀. It showcases projects like:
+SoulFuel-DSfolio is my living portfolio: a launchpad of AI/ML projects built for speed, clarity, and recruiter-readiness 🚀.  
+It showcases projects like:
 
-Laychabot — RAG chatbot with 95% Q&A accuracy
-
-SoulMonitor — personalized wellness tracker, improved scores by 20%
-
-Investment Navigator — boosted user confidence by 25%
-
-Housing Price Predictor — achieved 88% accuracy
-
-End‑to‑End ML Pipeline — reduced deployment time by 30%
+- Laychabot — RAG chatbot with 95% Q&A accuracy  
+- SoulMonitor — personalized wellness tracker, improved scores by 20%  
+- Investment Navigator — boosted user confidence by 25%  
+- Housing Price Predictor — achieved 88% accuracy  
+- End-to-End ML Pipeline — reduced deployment time by 30%
 
 I’ve contributed across industries — from healthcare and retail to manufacturing and finance — with roles at Santander Bank, Ace Hardware, and QVC Corporation, where I engineered automation systems, dashboards, and scalable ML platforms that improved efficiency by up to 30–40%.
 
 Let’s connect if you’re hiring, building something weird and wonderful, or just want to swap AI memes 🐙📡
-"""
-)
+""")
 
-
-# ✅ Funny Robot Profile Image
+# --- Profile Image & Links ---
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 github_url = "https://github.com/amitchouguleack"
 profile_img_url = "https://copilot.microsoft.com/th/id/BCO.bc0a24a0-d922-46fa-91a0-27131ac42281.png"
 
-st.markdown(
-    f"""
-    <div style="text-align: center;">
-        <img src="{profile_img_url}" style="width:200px; border-radius:50%; margin-bottom:10px;" alt="Profile Image">
-        <div style="margin-top:10px;">
-            <a href="{linkedin_url}" target="_blank" style="margin-right:20px;">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
-            </a>
-            <a href="{github_url}" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
-            </a>
-        </div>
+st.markdown(f"""
+<div style="text-align: center;">
+    <img src="{profile_img_url}" style="width:200px; border-radius:50%; margin-bottom:10px;" alt="Profile Image">
+    <div style="margin-top:10px;">
+        <a href="{linkedin_url}" target="_blank" style="margin-right:20px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+        </a>
+        <a href="{github_url}" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
+        </a>
     </div>
-    """,
-    unsafe_allow_html=True
-)
+</div>
+""", unsafe_allow_html=True)
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
 col1, col2 = st.columns(2)
 with col1:
     st.subheader("🧠 AI/ML & Data Science")
-    st.write(
-        "- Python, PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, OpenCV, YOLO\n"
-        "- NLP, LLM Fine-tuning, Computer Vision, Pandas, NumPy, Matplotlib, Plotly, XGBoost, LightGBM"
-    )
+    st.write("""
+- Python, PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, OpenCV, YOLO  
+- NLP, LLM Fine-tuning, Computer Vision, Pandas, NumPy, Matplotlib, Plotly, XGBoost, LightGBM
+""")
     st.subheader("☁️ Backend & Cloud")
-    st.write(
-        "- FastAPI, Django, Flask, Node.js, Express, REST, GraphQL\n"
-        "- MLflow, Docker, Kubernetes, AWS SageMaker, GCP Vertex AI, Azure ML, CI/CD, Airflow, Spark, Kafka, Terraform"
-    )
+    st.write("""
+- FastAPI, Django, Flask, Node.js, Express, REST, GraphQL  
+- MLflow, Docker, Kubernetes, AWS SageMaker, GCP Vertex AI, Azure ML, CI/CD, Airflow, Spark, Kafka, Terraform
+""")
 with col2:
     st.subheader("🎨 Frontend & UI")
-    st.write(
-        "- React.js, Next.js, Angular, Tailwind, Material UI, Redux, D3.js, HTML5, CSS3")
+    st.write("""
+- React.js, Next.js, Angular, Tailwind, Material UI, Redux, D3.js, HTML5, CSS3
+""")
     st.subheader("🗃️ Databases & More")
-    st.write(
-        "- PostgreSQL, MongoDB, MySQL, Redis, Pinecone, FAISS, Elasticsearch, Neo4j, Snowflake, BigQuery\n"
-        "- MLOps, AI Productization, Real-Time Analytics, RPA, Healthcare & Manufacturing AI Solutions"
-    )
+    st.write("""
+- PostgreSQL, MongoDB, MySQL, Redis, Pinecone, FAISS, Elasticsearch, Neo4j, Snowflake, BigQuery  
+- MLOps, AI Productization, Real-Time Analytics, RPA, Healthcare & Manufacturing AI Solutions
+""")
 
 # --- Projects ---
 st.header("🚀 Featured Projects")
@@ -145,31 +157,18 @@ projects = [
 for proj in projects:
     st.subheader(proj["title"])
     st.write(proj["desc"])
-    st.markdown(
-        f"""
-        <div style="text-align: center;">
-            <a href="{proj['url']}" target="_blank">
-                <img src="{proj['img']}" class="clickable-img" alt="{proj['title']}">
-            </a>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    st.markdown(f"""
+    <div style="text-align: center;">
+        <a href="{proj['url']}" target="_blank">
+            <img src="{proj['img']}" class="clickable-img" alt="{proj['title']}">
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
     st.markdown("---")
 
 # --- Experience & Education ---
 st.header("💼 Experience & Education")
-st.subheader("Experience")
-st.write(
-    AI/ML Engineer — Santander Bank & Independent Projects(Jan 2022 – Present)
-    - 🛍️ Software Engineer — Ace Hardware Corporation(Mar 2019 – Nov 2021)
-    - 📺 Software Engineer — QVC Corporation(Jan 2016 – Oct 2018)
-)
-st.subheader("Education & Learning")
-st.write(
-    "- 📚 Generative AI, LangChain Agents, RLHF, Multi-Cloud MLOps, Zero Trust Security\n"
-    "- 🧠 Ongoing: Federated Learning, XAI, Serverless Deployments, Vector Databases, Data Lakehouses"
-)
+
 
 # --- Footer ---
 st.markdown("---")
