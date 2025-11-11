@@ -37,12 +37,24 @@ st.title("🔥 SoulFuel-DSfolio")
 st.header("🧠 About Me")
 st.write(
     """
-Hi! I'm **Amit Chougule** — an **AI/ML Architect, Software Engineer & Product Builder** based in Pennsylvania 🧩💻  
-I’ve spent 7+ years turning data into decisions, prototypes into products, and coffee into code ☕⚙️
+Hi! I'm Amit Chougule — an AI/ML Architect, Software Engineer & Product Builder based in Pennsylvania 🧩💻 I’ve spent 9+ years designing and deploying intelligent systems, turning data into decisions, prototypes into products, and coffee into code ☕⚙️
 
-I specialize in **GenAI, MLOps, and real-time ML pipelines** — building full-stack systems that scale, sparkle ✨, and sometimes talk back (thanks LangChain 🤖)
+I specialize in Generative AI, MLOps, and real‑time ML pipelines — building full‑stack systems that scale, sparkle ✨, and sometimes talk back (thanks LangChain 🤖). My expertise spans cloud‑native AI deployments, recommendation systems, chatbots, dashboards, and computer vision, with a proven track record of delivering production‑grade solutions that drive measurable business impact.
 
-**SoulFuel-DSfolio** is my living portfolio: a launchpad of AI/ML projects built for speed, clarity, and recruiter-readiness 🚀  
+SoulFuel‑DSfolio is my living portfolio: a launchpad of AI/ML projects built for speed, clarity, and recruiter‑readiness 🚀. It showcases projects like:
+
+Laychabot — RAG chatbot with 95% Q&A accuracy
+
+SoulMonitor — personalized wellness tracker, improved scores by 20%
+
+Investment Navigator — boosted user confidence by 25%
+
+Housing Price Predictor — achieved 88% accuracy
+
+End‑to‑End ML Pipeline — reduced deployment time by 30%
+
+I’ve contributed across industries — from healthcare and retail to manufacturing and finance — with roles at Santander Bank, Ace Hardware, and QVC Corporation, where I engineered automation systems, dashboards, and scalable ML platforms that improved efficiency by up to 30–40%.
+
 Let’s connect if you’re hiring, building something weird and wonderful, or just want to swap AI memes 🐙📡
 """
 )
@@ -149,9 +161,9 @@ for proj in projects:
 st.header("💼 Experience & Education")
 st.subheader("Experience")
 st.write(
-    "- 🧪 Python Developer / Tech Support — Alcon Vision & Independent Projects (Jan 2023 – Present)\n"
-    "- 🛍️ Full Stack Developer — Ace Hardware (Mar 2020 – Nov 2022)\n"
-    "- 🏭 Front-End Developer — Matel Manufacturing (Jan 2018 – Oct 2019)"
+   - 🤖 AI/ML Engineer — Santander Bank & Independent Projects (Jan 2022 – Present)
+- 🛍️ Software Engineer — Ace Hardware Corporation (Mar 2019 – Nov 2021)
+- 📺 Software Engineer — QVC Corporation (Jan 2016 – Oct 2018)
 )
 st.subheader("Education & Learning")
 st.write(
