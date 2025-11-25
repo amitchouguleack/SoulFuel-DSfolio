@@ -73,26 +73,28 @@ I’ve contributed across industries — from healthcare and retail to manufactu
 
 Let’s connect if you’re hiring, building something weird and wonderful, or just want to swap AI memes 🐙📡
 """)
-
 # --- Profile Image & Links ---
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 github_url = "https://github.com/amitchouguleack"
 profile_img_url = "images/pro-pic.jpg"
 
-
-st.markdown(f"""
-<div style="text-align: center;">
-    <img src="{profile_img_url}" style="width:200px; border-radius:50%; margin-bottom:10px;" alt="Profile Image">
-    <div style="margin-top:10px;">
-        <a href="{linkedin_url}" target="_blank" style="margin-right:20px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
-        </a>
-        <a href="{github_url}" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
-        </a>
+# Use Streamlit's image renderer for local files
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="images/pro-pic.jpg" style="width:200px; border-radius:50%; margin-bottom:10px;" alt="Profile Image">
+        <div style="margin-top:10px;">
+            <a href="https://www.linkedin.com/in/amit-chougule-software-developer/" target="_blank" style="margin-right:20px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+            </a>
+            <a href="https://github.com/amitchouguleack" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
+            </a>
+        </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """,
+    unsafe_allow_html=True
+)
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
