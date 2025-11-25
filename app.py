@@ -78,23 +78,50 @@ linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 github_url = "https://github.com/amitchouguleack"
 profile_img_url = "images/pro-pic.jpg"
 
-# Use Streamlit's image renderer for local files
-st.markdown(
-    """
-    <div style="text-align: center;">
-        <img src="images/pro-pic.jpg" style="width:200px; border-radius:50%; margin-bottom:10px;" alt="Profile Image">
-        <div style="margin-top:10px;">
-            <a href="https://www.linkedin.com/in/amit-chougule-software-developer/" target="_blank" style="margin-right:20px;">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
-            </a>
-            <a href="https://github.com/amitchouguleack" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
-            </a>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# --- Profile Image & Links ---
+from PIL import Image
+
+linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
+github_url = "https://github.com/amitchouguleack"
+profile_img_path = "images/pro-pic.jpg"
+
+# --- Circle Style CSS ---
+st.markdown("""
+    <style>
+        .profile-pic {
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+        }
+        .icon-links img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.2s ease;
+        }
+        .icon-links img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# --- Display Profile Image ---
+profile_img = Image.open(profile_img_path)
+st.image(profile_img, caption="Amit Chougule", use_column_width=False)
+
+# --- Social Icons ---
+st.markdown(f"""
+<div style="text-align: center;" class="icon-links">
+    <a href="{linkedin_url}" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+    <a href="{github_url}" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    </a>
+</div>
+""", unsafe_allow_html=True)
+
 
 # --- Skills ---
 st.header("⚙️ Core Skills")
