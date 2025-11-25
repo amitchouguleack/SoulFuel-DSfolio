@@ -77,7 +77,8 @@ Let’s connect if you’re hiring, building something weird and wonderful, or j
 # --- Profile Image & Links ---
 linkedin_url = "https://www.linkedin.com/in/amit-chougule-software-developer/"
 github_url = "https://github.com/amitchouguleack"
-profile_img_url = "https://copilot.microsoft.com/th/id/BCO.bc0a24a0-d922-46fa-91a0-27131ac42281.png"
+profile_img_url = "images/pro-pic.jpg"
+
 
 st.markdown(f"""
 <div style="text-align: center;">
@@ -171,7 +172,7 @@ st.header("💼 Experience & Education")
 
 st.subheader("Experience")
 st.write("""
-- 🤖 Software Engineer - Santander Bank & Independent Projects (Jan 2022 - Present)  
+- 🤖 Software Engineer - Santander Bank Corporation (Jan 2022 - Present)  
     • Engineered AI-driven automation systems improving operational efficiency by 25%  
     • Built chatbots, recommendation engines, and ML pipelines for healthcare & retail  
     • Customized open-source AI frameworks for scalability and production readiness  
