@@ -46,7 +46,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Centered Title ---
-st.markdown('<div class="center-title">🔥 SoulFuel-DSfolio</div>',
+st.markdown('<div class="center-title"> SoulFuel-DSfolio</div>',
             unsafe_allow_html=True)
 st.markdown('<div class="center-subtitle">by Amit Chougule</div>',
             unsafe_allow_html=True)
@@ -171,7 +171,7 @@ st.header("💼 Experience & Education")
 
 st.subheader("Experience")
 st.write("""
-- 🤖 AI/ML Engineer - Santander Bank & Independent Projects (Jan 2022 - Present)  
+- 🤖 Software Engineer - Santander Bank & Independent Projects (Jan 2022 - Present)  
     • Engineered AI-driven automation systems improving operational efficiency by 25%  
     • Built chatbots, recommendation engines, and ML pipelines for healthcare & retail  
     • Customized open-source AI frameworks for scalability and production readiness  
