@@ -139,21 +139,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Display Profile Image ---
-profile_img = Image.open(profile_img_path)
-st.image(profile_img, caption="Amit Chougule", use_column_width=False)
 
-# --- Social Icons ---
-st.markdown(f"""
-<div style="text-align: center;" class="icon-links">
-    <a href="{linkedin_url}" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-    </a>
-    <a href="{github_url}" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-    </a>
-</div>
-""", unsafe_allow_html=True)
 
 
 # --- Skills ---
