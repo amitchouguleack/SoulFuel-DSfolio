@@ -100,7 +100,7 @@ with col1:
 with col2:
     st.markdown("""
     Hi! I'm Amit Chougule — Software Engineer & AI/ML Architect, Product Builder based in Pennsylvania 🧩💻  
-    I’ve spent 7+ years designing and deploying intelligent systems, turning data into decisions, prototypes into products, and coffee into code ☕⚙️  
+    I’ve spent 5+ years designing and deploying intelligent systems, turning data into decisions, prototypes into products, and coffee into code ☕⚙️  
 
     I specialize in Generative AI, MLOps, and real-time ML pipelines — building full-stack systems that scale, sparkle ✨, and sometimes talk back (thanks LangChain 🤖).  
     My expertise spans cloud-native AI deployments, recommendation systems, chatbots, dashboards, and computer vision, with a proven track record of delivering production-grade solutions that drive measurable business impact.  
@@ -230,10 +230,7 @@ st.write("""
     • Integrated ML models for demand forecasting, improving efficiency by 30%  
     • Deployed scalable apps on AWS & Heroku with CI/CD pipelines  
 
-- 📺 Software Engineer — QVC Corporation | Jan 2019 – Dec 2020 
-    • Built responsive dashboards with React, Bootstrap, and CSS  
-    • Streamlined API integrations, reducing bug reports by 40%  
-    • Developed reusable UI components and documentation
+
 """)
 
 st.subheader("Education & Learning")

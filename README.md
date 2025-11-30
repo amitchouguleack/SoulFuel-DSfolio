@@ -6,7 +6,7 @@ A Python‑powered AI/ML portfolio built entirely with Streamlit — no HTML, CS
 
 
 👨‍💻 About Me
-I’m Amit Chougule — a Software Engineer & AI/ML Engineer based in Pennsylvania with 7+ years of experience designing intelligent systems, building full‑stack ML platforms, and deploying scalable AI solutions.
+I’m Amit Chougule — a Software Engineer & AI/ML Engineer based in Pennsylvania with 5+ years of experience designing intelligent systems, building full‑stack ML platforms, and deploying scalable AI solutions.
 
 My expertise spans Generative AI, MLOps, and real‑time ML pipelines across healthcare, retail, and manufacturing. I focus on rapid learning, ethical design, and system‑first deployment, turning business goals into measurable, data‑driven outcomes.
 
@@ -42,11 +42,10 @@ Housing Price Predictor — achieved 88% accuracy using regression & tree‑base
 End‑to‑End ML Pipeline — reduced deployment time by 30% (Python, Scikit‑learn)
 
 💼 Career Highlights
-AI/ML Engineer — Santander Bank (2022–Present) • Spearheaded AI‑driven automation systems improving operational efficiency by 25% • Built production‑grade chatbots, recommendation engines, and ML pipelines using LangChain, FastAPI, and cloud‑native tools • Enabled modular reuse and real‑time insights across healthcare and retail
+Software Engineer — Santander Bank (Jan 2023–Present) • Spearheaded AI‑driven automation systems improving operational efficiency by 25% • Built production‑grade chatbots, recommendation engines, and ML pipelines using LangChain, FastAPI, and cloud‑native tools • Enabled modular reuse and real‑time insights across healthcare and retail
 
-Software Engineer — Ace Hardware Corporation (2019–2021) • Led development of inventory dashboards and demand forecasting models using Flask, Streamlit, and REST APIs • Integrated ML models into business operations, reducing stockouts and improving forecasting accuracy by 30% • Deployed scalable apps on AWS and Heroku with CI/CD pipelines
+Software Engineer — Ace Hardware Corporation (Jan 2021 – Nov 2022) • Led development of inventory dashboards and demand forecasting models using Flask, Streamlit, and REST APIs • Integrated ML models into business operations, reducing stockouts and improving forecasting accuracy by 30% • Deployed scalable apps on AWS and Heroku with CI/CD pipelines
 
-Full‑Stack Engineer — QVC Corporation (2016–2018) • Delivered responsive dashboards and reusable UI components using React, Bootstrap, and CSS • Streamlined API integrations, reducing bug reports by 40% and improving developer velocity • Collaborated cross‑functionally to align engineering output with business KPIs
 
 📚 Learning & Growth
 Generative AI, LangChain Agents, RLHF, Multi‑Cloud MLOps, Zero Trust Security
